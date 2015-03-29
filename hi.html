@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Hi...</title>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      setInterval(function(){
+        var node = document.createElement("div");
+        var textnode = document.createTextNode("Hi Nicole...");
+        node.appendChild(textnode);
+        document.getElementById("hi-container").appendChild(node);
+      }, 500);
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+    }
+
+    #hi-container div {
+      font-size: 16px;
+      transition: font-size .25s ease-out;
+      cursor: pointer;
+    }
+
+    #hi-container div:hover {
+      font-size: 22px;
+      transition: font-size .5s ease;
+    }
+
+    /*#hi-container div:nth-child(odd):hover {
+      font-size: 16px;
+      transition: font-size .5s ease-out;
+    }
+
+    #hi-container div:nth-child(odd):hover {
+      font-size: 22px;
+      transition: font-size 1s ease;
+    }*/
+  </style>
+</head>
+<body>
+<div id="hi-container">
+</div>
+</body>
+</html>
