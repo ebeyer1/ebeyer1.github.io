@@ -1,0 +1,103 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*background-color: #B1BDCE;*/
+}
+
+h1,
+h2 {
+  font-family: "PT Sans";
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: .5rem 0;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EBEBEB;
+}
+
+.logo {
+  color: white;
+  background-color: #344E72;
+  padding: .5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo span {
+  color: #0D2342;
+}
+
+footer {
+  background-color: #344E72;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  width: calc(100% / 4);
+  margin-right: -4px;
+  list-style-type: none;
+  text-align: center;
+}
+
+footer ul li a {
+  display: block;
+  padding: 1rem 0;
+}
+
+footer ul li a:hover {
+  background-color: rgba(255, 255, 255, .15);
+  transition: .3s background-color ease;
+}
+
+.container {
+  width: 100%;
+  height: calc(100% - 58px - 50px); /* 58 for header, 50 for footer */
+
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('microchip-min.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 35, 66, 0.7);
+}
+
+.container h1,
+.container h2 {
+  color: #FFFFFF;
+}
+
+.welcome {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
