@@ -74,7 +74,7 @@ footer ul li a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('microchip-min.jpg');
+  background-image: url('../images/microchip-min.jpg');
   background-size: cover;
   z-index: -1;
 }
